@@ -31,7 +31,7 @@ class TimeAgoExtension extends \Twig_Extension
             return $date;
         }
 
-        $snippet = $twig->render('@phmLabsTwigTimeAgo/Default/timeago.html.twig', ['firstRun' => $this->firstRun, 'dateIso' => $date->format(\DateTime::ISO8601), 'dateString' => $date->format('y-m-d')]);
+        $snippet = $twig->render('@phmLabsTwigTimeAgo/timeago.html.twig', ['firstRun' => $this->firstRun, 'dateIso' => $date->format(\DateTime::ISO8601), 'dateString' => $date->format('y-m-d')]);
         $this->firstRun = false;
         return $snippet;
     }

@@ -1,0 +1,15 @@
+{% if firstRun %}
+    <script src="{{ asset('bundles/phmlabstwigtimeago/js/timeago.js') }}"></script>
+
+    <script>
+        jQuery.timeago.settings.strings.suffixAgo = '';
+        jQuery.timeago.settings.strings.seconds = '< 1 min';
+        jQuery.timeago.settings.strings.minute = '1 min';
+        jQuery.timeago.settings.strings.month = '1 month';
+
+        jQuery(document).ready(function () {
+            $("time.timeago").timeago();
+        });
+    </script>
+{% endif %}
+<time class="timeago" datetime="{{ dateIso }}'">{{ dateString }}</time>

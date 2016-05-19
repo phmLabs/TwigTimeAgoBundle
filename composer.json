@@ -1,0 +1,9 @@
+{
+  "name": "phmlabs/twigtimeagobundle",
+  "description": "integate https://github.com/rmm5t/jquery-timeago in symfony/twig.",
+  "autoload": {
+    "psr-4": {
+      "phmLabs\\TwigTimeAgoBundle\\": "src/"
+    }
+  }
+}

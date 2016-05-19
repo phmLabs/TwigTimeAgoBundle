@@ -1,0 +1,7 @@
+services:
+
+    phmlabs.timeago.twig:
+        class: phmLabs\TwigTimeAgoBundle\Twig\TimeAgoExtension
+        public: false
+        tags:
+            - { name: twig.extension }

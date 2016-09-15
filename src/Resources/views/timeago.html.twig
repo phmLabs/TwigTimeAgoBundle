@@ -5,10 +5,12 @@
         jQuery.timeago.settings.strings.seconds = '< 1 min';
         jQuery.timeago.settings.strings.minute = '1 min';
         jQuery.timeago.settings.strings.month = '1 month';
+        jQuery.timeago.settings.strings.localeTitle = true;
 
         jQuery(document).ready(function () {
             $("time.timeago").timeago();
         });
     </script>
 {% endif %}
+
 <time class="timeago" datetime="{{ dateIso }}'">{{ dateString }}</time>
